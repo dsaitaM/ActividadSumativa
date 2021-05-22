@@ -1,0 +1,17 @@
+ <div class="contenedor">
+    <div>
+        <div *ngFor="let item of listaAbierto">
+        <p  id="abierto" class="caja" (click)="clickearNota(item.id,item.titulo,item.estado,item.descripcion)"><b>{{item.titulo}}</b><br>{{item.descripcion}}</p>
+        </div>
+    </div>
+    <div>
+        <div *ngFor="let item of listaEnProceso">
+            <p id="enProceso" class="caja" (click)="clickearNota(item.id,item.titulo,item.estado,item.descripcion)"><b>{{item.titulo}}</b><br>{{item.descripcion}}</p> 
+        </div>
+    </div>
+    <div>
+        <div *ngFor="let item of listaCerrado">
+            <p id="cerrado" class="caja" (click)="clickearNota(item.id,item.titulo,item.estado,item.descripcion)"><b>{{item.titulo}}</b><br>{{item.descripcion}}</p> 
+        </div>
+    </div>
+  </div>

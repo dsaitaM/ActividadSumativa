@@ -1,0 +1,35 @@
+.caja{
+    width: 350px;
+    border-color: black;
+    border-style: solid;
+    margin: 25px;
+    text-align: center;
+    padding-top: 10px;
+    min-height: 100px;
+}
+
+.caja:hover{
+    color: red;
+}
+
+#abierto{
+    background-color: #b0defc;
+}
+
+#enProceso{
+    background-color: #ecf2ba;
+}
+
+#cerrado{
+    background-color: #fec2bd;
+}
+
+
+button{
+    margin-left: 20px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}

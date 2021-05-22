@@ -1,0 +1,66 @@
+#inputs{
+    margin-left: 460px;
+}
+
+#botones{
+    margin-left: 640px;
+}
+
+label{
+    font-weight: 100px;
+}
+
+input{
+    margin-top: 15px;
+    padding-right: 90px;
+}
+
+select{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 50px;
+}
+
+button{
+    margin: 10px;
+    width: 15%;
+}
+
+.inputs{
+    width: 30%;
+}
+
+
+
+
+.caja{
+    height: 70px;
+    width: 350px;
+    border-color: black;
+    border-style: solid;
+    margin: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#iniciada{
+    background-color: #b0defc;
+    margin-left: 880px;
+    position: relative;
+    bottom: 222px;
+}
+
+#enProceso{
+    background-color: #ecf2ba;
+    margin-left: 450px;
+    position: relative;
+    bottom: 111px;
+}
+
+#terminada{
+    background-color: #fec2bd;
+}
+
+p{
+    text-align: left;
+}

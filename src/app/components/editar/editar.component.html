@@ -1,0 +1,32 @@
+<form [formGroup]="formulario"  (ngSubmit)="editarNota()">
+    <div id="inputs">
+        <mat-form-field appearance="fill" class="inputs">
+            <mat-label>Título</mat-label>
+            <input matInput placeholder="Nota" type="text" formControlName="titulo">
+          </mat-form-field>
+        <br>
+        <br>
+        <mat-form-field appearance="fill" class="inputs">
+            <mat-label>Estado</mat-label>
+            <select formControlName="estado" id="estadoSeleccionado" matNativeControl>
+              <option hidden disabled selected>Select</option>
+              <option value="abierto">Abierto</option>
+              <option value="enProceso">En proceso</option>
+              <option value="cerrado">Cerrado</option>
+            </select>
+          </mat-form-field>
+        <br>
+        <br>
+        <mat-form-field appearance="fill" class="inputs">
+            <mat-label>Descripción</mat-label>
+            <textarea formControlName="descripcion" matInput placeholder="Descripción"></textarea>
+          </mat-form-field>
+    </div>
+    <br>
+    <br>
+    <div id="botones" >
+      <button mat-stroked-button (click)="eliminarNota()">Eliminar</button>
+       <button *ngIf="estado == 'abierto' || estado == 'enProceso'" mat-stroked-button  type="submit">Actualizar</button> 
+    </div>
+    
+    </form>
